@@ -131,3 +131,8 @@ def plot_flight_path(zt, z0, theta0, N=1000):
     ax.plot(x, -z, linestyle='-', linewidth=2.0)
     ax.axis('scaled', adjustable='box')
     pyplot.show()
+
+# Main
+if __name__ == "__main__":
+  # Initial conditions: zt = 64.0, z0 = 16.0, theta0 = -90.0.
+  plot_flight_path(64.0, 16.0, -90.0)
